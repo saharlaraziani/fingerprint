@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - fingerprint@localhost" uuid="54483215-8838-40b7-a0c6-476ebac75b4d">
+    <database-info product="MySQL" version="5.7.14" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="fingerprint"/>
+      <table id="2" parent="1" name="device"/>
+      <table id="3" parent="1" name="fingerprint"/>
+      <table id="4" parent="1" name="log"/>
+      <table id="5" parent="1" name="message"/>
+      <table id="6" parent="1" name="user"/>
+      <column id="7" parent="2" name="ID_device">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="8" parent="2" name="Nom">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="9" parent="2" name="date_creation">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="10" parent="2" name="ID_user">
+        <data-type>int(10)</data-type>
+      </column>
+      <index id="11" parent="2" name="FKDevice862349">
+        <columns>ID_user</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="12" parent="2" name="FKDevice862350">
+        <columns>ID_user</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="13" parent="2" name="ID_device">
+        <columns>ID_device</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="14" parent="2" name="ID_device">
+        <columns>ID_device</columns>
+        <underlying-index>ID_device</underlying-index>
+      </key>
+      <key id="15" parent="2" name="PRIMARY">
+        <columns>ID_device</columns>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="3" name="ID_fingerprint">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="17" parent="3" name="time_Stamp">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="18" parent="3" name="timeZone">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="19" parent="3" name="browser_plugins">
+        <data-type>varchar(1000)</data-type>
+      </column>
+      <column id="20" parent="3" name="nav_platform">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="21" parent="3" name="cookies_enabled">
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="22" parent="3" name="do_not_track">
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="23" parent="3" name="using_adblock">
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="24" parent="3" name="webGL_vendor">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="25" parent="3" name="WebGL_renderer">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="26" parent="3" name="Canvas">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="27" parent="3" name="user_agent">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="28" parent="3" name="fonts">
+        <data-type>varchar(1000)</data-type>
+      </column>
+      <column id="29" parent="3" name="date_creation">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="30" parent="3" name="ID_device">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="31" parent="3" name="ID_user">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="32" parent="3" name="localJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="33" parent="3" name="dntJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="34" parent="3" name="acceptHttp">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="35" parent="3" name="hostHttp">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="36" parent="3" name="connectionHttp">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="37" parent="3" name="encodingHttp">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="38" parent="3" name="languageHttp">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="39" parent="3" name="orderHttp">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="40" parent="3" name="resolutionJS">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="41" parent="3" name="sessionJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="42" parent="3" name="IEDataJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="43" parent="3" name="useragentJS">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="44" parent="3" name="userIPCountry">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="45" parent="3" name="userIP">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="46" parent="3" name="refererHttp">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="47" parent="3" name="appnameJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="48" parent="3" name="appcodenameJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="49" parent="3" name="versionFlashJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="50" parent="3" name="javaenabledJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="51" parent="3" name="vendorJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="52" parent="3" name="productJS">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="53" parent="3" name="dntHttp">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <index id="54" parent="3" name="FKFingerprin364591">
+        <columns>ID_user</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="55" parent="3" name="FKFingerprin364592">
+        <columns>ID_user</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="56" parent="3" name="FKFingerprin70343">
+        <columns>ID_device</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="57" parent="3" name="FKFingerprin70344">
+        <columns>ID_device</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="58" parent="3" name="ID_fingerprint">
+        <columns>ID_fingerprint</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="59" parent="3" name="ID_fingerprint">
+        <columns>ID_fingerprint</columns>
+        <underlying-index>ID_fingerprint</underlying-index>
+      </key>
+      <key id="60" parent="3" name="PRIMARY">
+        <columns>ID_fingerprint</columns>
+        <primary>1</primary>
+      </key>
+      <column id="61" parent="4" name="ID_log">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="62" parent="4" name="date_creation">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="63" parent="4" name="event_log">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="64" parent="4" name="ID_user">
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="65" parent="4" name="ID_fingerprint">
+        <data-type>int(10)</data-type>
+      </column>
+      <index id="66" parent="4" name="FKLog197318">
+        <columns>ID_fingerprint</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="67" parent="4" name="FKLog197319">
+        <columns>ID_fingerprint</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="68" parent="4" name="FKLog506475">
+        <columns>ID_user</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="69" parent="4" name="FKLog506476">
+        <columns>ID_user</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="70" parent="4" name="ID_log">
+        <columns>ID_log</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="71" parent="4" name="ID_log">
+        <columns>ID_log</columns>
+        <underlying-index>ID_log</underlying-index>
+      </key>
+      <key id="72" parent="4" name="PRIMARY">
+        <columns>ID_log</columns>
+        <primary>1</primary>
+      </key>
+      <column id="73" parent="5" name="msg_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="74" parent="5" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="75" parent="5" name="message">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="76" parent="5" name="status">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="77" parent="5" name="time">
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <key id="78" parent="5" name="PRIMARY">
+        <columns>msg_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="79" parent="6" name="ID_user">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="80" parent="6" name="email">
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="81" parent="6" name="nom">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="82" parent="6" name="mot_de_passe">
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="83" parent="6" name="date_creation">
+        <data-type>datetime</data-type>
+      </column>
+      <index id="84" parent="6" name="ID_user">
+        <columns>ID_user</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="85" parent="6" name="ID_user">
+        <columns>ID_user</columns>
+        <underlying-index>ID_user</underlying-index>
+      </key>
+      <key id="86" parent="6" name="PRIMARY">
+        <columns>ID_user</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
